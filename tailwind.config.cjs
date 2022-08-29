@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         "main": "#191717",
         "accent": "#03989e",
-      }
+      },
     },
 	},
 	plugins: [],

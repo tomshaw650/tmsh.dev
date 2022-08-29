@@ -18,14 +18,22 @@
   font-display: fallback;
 }
 
-html, body {
-  font-family: "Open Sans", sans-serif;
-  color-scheme: dark;
-  scroll-behaviour: smooth;
+@layer base {
+  html, body {
+    font-family: "Open Sans", sans-serif;
+    color-scheme: dark;
+    scroll-behaviour: smooth;
 
-  @layer antialiased bg-main text-slate-100;
+    @apply antialiased bg-main text-slate-100;
+  }
+
+  h1 {
+    font-family: "Open Sans Extra Bold", sans-serif;
+  }
 }
 
-h1 {
-  font-family: "Open Sans Extra Bold", sans-serif;
+@layer components {
+  li {
+    @apply font-bold hover:text-accent;
+  }
 }
