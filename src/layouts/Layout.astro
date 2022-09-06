@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 
 import '../styles/base.css';
+import NavBar from '../components/NavBar.astro';
 ---
 
 <!DOCTYPE html>
@@ -14,10 +15,12 @@ import '../styles/base.css';
 <head>
   <meta charset="UTF-8">
   <title>{title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 </head>
 
 <body>
+  <NavBar />
   <slot />
 </body>
 

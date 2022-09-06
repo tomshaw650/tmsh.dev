@@ -22,7 +22,7 @@
   html, body {
     font-family: "Open Sans", sans-serif;
     color-scheme: dark;
-    scroll-behaviour: smooth;
+    overflow: hidden;
 
     @apply antialiased bg-main text-slate-100;
   }

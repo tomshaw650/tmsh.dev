@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+
+  .el {
+    transition: 0.3s ease;
+  }
+
+  .el:hover {
+    color: #03989e;
+  }
+}

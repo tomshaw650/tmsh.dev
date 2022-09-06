@@ -1,15 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import NavBar from "../components/NavBar.astro";
+import { Icon } from "astro-icon";
+
+import SocialButton from "../components/SocialButton.astro";
 ---
 
 <Layout title="Tom Shaw • Developer">
   <main class="h-screen flex flex-col">
-    <NavBar />
-    <div class="mt-28 flex flex-col place-items-center">
+    <div class="mt-20 flex flex-col place-items-center">
       <h1 class="text-6xl">Tom Shaw</h1>
       <h2 class="text-2xl mt-4">Computer Science BSc • Frontend Developer @ HMRC</h2>
       <img src="/assets/profile.jpg" alt="A picture of me!" height="300" width="300" class="mt-8 rounded-full ring-8 ring-accent">
+
+      <div class="mt-16 flex flex-row space-x-4">
+        <SocialButton href="https://github.com/tomshaw650" icon="github" label="Check what I'm working on" />
+        <SocialButton href="https://twitter.com/tomshawdev" icon="twitter" label="See what I'm talking about" />
+        <SocialButton href="https://www.linkedin.com/in/tom-shaw99/" icon="linkedin" label="Link with me!" />
+      </div>
     </div>
   </main>
 </Layout>

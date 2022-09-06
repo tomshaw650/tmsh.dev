@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon';
+
+import '../styles/animate.css';
+
+export interface Props {
+  href: string;
+  icon: string;
+  label: string;
+}
+
+
+const { href, icon, label } = Astro.props;
+---
+
+<a target="_blank" href={href} class="el">
+  <Icon pack="mdi" name={icon} height="50" width="50" />
+  <span class="sr-only">{label}</span>
+</a>
