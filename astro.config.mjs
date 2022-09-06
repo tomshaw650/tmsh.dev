@@ -13,6 +13,11 @@ export default defineConfig({
   vite: {
     ssr: {
       external: ['svgo']
+    },
+    build: {
+      rollupOptions: {
+        external: ["astro-icon"]
+      }
     }
   }
 });
