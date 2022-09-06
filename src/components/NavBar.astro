@@ -1,12 +1,32 @@
 ---
 import '../styles/base.css';
 import '../styles/animate.css';
+
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact', href: '/contact' },
+];
+
+const pathName = new URL(Astro.request.url).pathname;
+const currentPath = pathName.slice(1);
+
 ---
 
-<ul class="mt-6 flex flex-row place-content-center space-x-6 text-md md:text-xl">
-  <li class="el"><a href="/">Home</a></li>
-  <li class="el"><a href="/about">About</a></li>
-  <li class="el"><a href="/projects">Projects</a></li>
-  <li class="el"><a href="/blog">Blog</a></li>
-  <li class="el"><a href="/contact">Contact</a></li>
-</ul>
+<nav>
+  <ul class="mt-6 flex flex-row place-content-center space-x-6 text-md md:text-xl">
+    {navItems.map(item => (
+    <li class="el">
+      <a href={item.href} class={currentPath === item.name.toLowerCase() || "" ? 'current' : ''}>{item.name}</a>
+    </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .current {
+    color: #03989e;
+  }
+</style>
