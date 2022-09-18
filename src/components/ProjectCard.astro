@@ -1,0 +1,21 @@
+---
+const { name, description, link } = Astro.props;
+---
+
+<div class="glide__slide flex flex-col max-w-xs bg-black border-2 border-white p-5">
+  <h2 class="text-2xl font-bold pb-4">{name}</h2>
+  <p class="pb-4">{description}</p>
+  <div class="pt-20"></div>
+  <a id="project-button" class="place-content-center bg-accent py-2 text-center font-bold cursor-pointer" href={link} target="_blank">View Source Code</a>
+</div>
+
+<style>
+  #project-button {
+    transition: 0.6s ease;
+  }
+
+  #project-button:hover {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+</style>

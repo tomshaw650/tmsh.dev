@@ -27,7 +27,7 @@
     @apply antialiased bg-main text-slate-100;
   }
 
-  h1 {
+  h1, h2 {
     font-family: "Open Sans Extra Bold", sans-serif;
   }
 }

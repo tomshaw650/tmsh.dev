@@ -1,11 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <Layout title="Tom Shaw • About">
   <main class="h-screen flex flex-col">
     <div class="mt-16 flex flex-col md:mt-20">
       <h1 class="text-5xl ml-32">Projects</h1>
+
+      <div class="p-24 flex flex-row space-x-14">
+        <ProjectCard class="glide__slide" name="Portfolio" description="This very site! This was made with Astro and Tailwind, serving as a place to let you know about me, while letting me display my projects and blog posts!" link="https://github.com/tomshaw650/tmsh.dev/" />
+        <ProjectCard class="glide__slide" name="Guestbook" description="My intro to the T3 Stack, this full-stack project is made with Next.js/Typescript, Tailwind, Prisma and tRPC, allowing users to log in with Discord and leave me a message." link="https://github.com/tomshaw650/guestbook" />  
+      </div>
     </div>
   </main>
 </Layout>
