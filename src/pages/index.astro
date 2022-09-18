@@ -1,21 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro"
 
-import SocialButton from "../components/SocialButton.astro";
+import SocialBar from "../components/SocialBar.astro";
 ---
 
-<Layout title="Tom Shaw • Developer">
+<Layout title="Tom Shaw • Home">
   <main class="h-screen flex flex-col">
     <div class="mt-16 flex flex-col place-items-center md:mt-20">
       <h1 class="text-6xl">Tom Shaw</h1>
       <h2 class="text-lg text-center mt-4 md:text-2xl">Computer Science BSc • Frontend Developer @ HMRC</h2>
       <img src="/assets/profile.jpg" alt="A picture of me!" height="300" width="300" class="mt-8 rounded-full ring-8 ring-accent">
 
-      <div class="mt-16 flex flex-row space-x-4">
-        <SocialButton href="https://github.com/tomshaw650" icon="github" label="Check what I'm working on" />
-        <SocialButton href="https://twitter.com/tomshawdev" icon="twitter" label="See what I'm talking about" />
-        <SocialButton href="https://www.linkedin.com/in/tom-shaw99/" icon="linkedin" label="Link with me!" />
-      </div>
+      <SocialBar />
     </div>
   </main>
 </Layout>
