@@ -5,14 +5,14 @@ import Layout from "../layouts/Layout.astro"
 <Layout title="Tom Shaw • About">
   <main class="h-screen flex flex-col">
     <div class="mt-16 flex flex-col md:mt-20">
-      <h1 class="text-5xl ml-32">Contact</h1>
-      <h2 class="text-xl ml-32 mt-5 text-zinc-600">I'd love for you to get in contact, for any reason!</h2>
+      <h1 class="text-5xl md:ml-32 ml-5">Contact</h1>
+      <h2 class="text-xl md:ml-32 ml-5 mt-5 text-zinc-600">I'd love for you to get in contact, for any reason!</h2>
 
-      <div class="mt-16 flex space-x-6 justify-center">
-        <a href="https://www.linkedin.com/in/tom-shaw99/" target="_blank"><i class="fa-brands fa-linkedin fa-10x"></i></a>
-        <a href="https://github.com/tomshaw650" target="_blank"><i class="fa-brands fa-github-square fa-10x"></i></a>
-        <a href="https://twitter.com/tomshawdev" target="_blank"><i class="fa-brands fa-twitter-square fa-10x"></i></a>
-        <a href="https://discord.com/users/153567788303122432" target="_blank"><i class="fa-brands fa-discord fa-10x"></i></a>
+      <div class="mt-16 flex space-x-8 justify-center">
+        <a href="https://www.linkedin.com/in/tom-shaw99/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/tomshaw650" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+        <a href="https://twitter.com/tomshawdev" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="https://discord.com/users/153567788303122432" target="_blank"><i class="fa-brands fa-discord"></i></a>
       </div>
     </div>
   </main>
@@ -21,9 +21,16 @@ import Layout from "../layouts/Layout.astro"
 <style>
   .fa-brands {
     transition: 0.5s ease;
+    font-size: 150px;
   }
 
   .fa-brands:hover {
     color: #03989e;  
+  }
+
+  @media (max-width: 768px) {
+    .fa-brands {
+      font-size: 70px;
+    }
   }
 </style>
