@@ -1,0 +1,9 @@
+---
+const { title, description, link } = Astro.props;
+---
+
+<div class="border-2 rounded-md border-accent max-w-xs p-2 bg-black py-10">
+  <h2 class="font-bold text-xl">{title}</h2>
+  <p class="mt-4 mb-10">{description}</p>
+  <span><a href={link} target="_blank"><u>Link to Project Repo</u></a></span>
+</div>

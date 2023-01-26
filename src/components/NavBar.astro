@@ -1,27 +1,36 @@
 ---
-import '../styles/base.css';
-import '../styles/animate.css';
+import "../styles/base.css";
+import "../styles/animate.css";
 
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const pathName = new URL(Astro.request.url).pathname;
 const currentPath = pathName.slice(1);
-
 ---
 
 <nav>
-  <ul class="mt-6 flex flex-row place-content-center space-x-6 text-md md:text-xl">
-    {navItems.map(item => (
-    <li class="el">
-      <a href={item.href} class={currentPath === item.name.toLowerCase() || "" ? 'current' : ''}>{item.name}</a>
-    </li>
-    ))}
+  <ul
+    class="mt-6 flex flex-row place-content-center space-x-6 text-md md:text-xl"
+  >
+    {
+      navItems.map((item) => (
+        <li class="el">
+          <a
+            href={item.href}
+            class={
+              currentPath === item.name.toLowerCase() || "" ? "current" : ""
+            }
+          >
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
   </ul>
 </nav>
 
