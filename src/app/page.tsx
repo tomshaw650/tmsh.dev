@@ -18,7 +18,7 @@ export default async function Home() {
 
   return (
     <>
-      <h1 className="text-6xl font-bold">hi👋, i'm tom!</h1>
+      <h1 className="text-6xl font-bold">hi👋, i&apos;m tom!</h1>
       <h2 className="opacity-80 mb-5 text-lg">
         frontend developer @
         <span className="text-[#008670]"> HM Revenue and Customs</span>
@@ -30,7 +30,7 @@ export default async function Home() {
       </div>
       <div className="max-w-md gap-y-5 flex flex-col text-xl">
         <p>
-          I'm a 23 y/o programmer from North East UK. Currently studying
+          I&apos;m a 23 y/o programmer from North East UK. Currently studying
           Computer Science BSc at Northumbria University, I plan to graduate
           soon and continue working as a software developer.
         </p>
