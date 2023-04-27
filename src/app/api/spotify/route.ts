@@ -1,8 +1,7 @@
-import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 import { getNowPlaying } from "./getNowPlaying";
 
-export async function GET(req: NextApiRequest) {
+export async function GET() {
   const response = await getNowPlaying();
 
   if (
