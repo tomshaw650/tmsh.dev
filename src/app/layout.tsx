@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={ls.className}>
-      <body className="max-w-2xl h-full mx-auto px-6 my-8 bg-black text-white">
+      <body className="max-w-2xl h-full mx-auto px-6 my-8 bg-hero text-white">
         <nav className="mb-5 gap-x-5 flex">
           <a className="hover:text-[#FDD641] text-xl" href="/">
             home

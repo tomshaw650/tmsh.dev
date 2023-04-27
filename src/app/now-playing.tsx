@@ -48,7 +48,10 @@ export default function DisplaySong() {
       </div>
 
       <div className="flex-1">
-        <p className="component font-bold">
+        <p className="text-xs">
+          {data.data.isPlaying ? "currently listening to..." : ""}
+        </p>
+        <p className="font-bold">
           {data.data.isPlaying ? data.data.title : "Not Listening"}
         </p>
         <p className="font-dark text-xs">
