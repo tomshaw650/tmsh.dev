@@ -21,7 +21,7 @@ export default function DisplaySong() {
   }
 
   if (error) {
-    return <div>error</div>;
+    return <div className="h-24">error showing song</div>;
   }
 
   return (
