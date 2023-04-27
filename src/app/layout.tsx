@@ -11,6 +11,18 @@ export const metadata = {
   },
   description: "Homepage for the portfolio",
   icons: "/favicon.ico",
+  openGraph: {
+    type: "website",
+    url: "https://tmsh.dev",
+    images: [
+      {
+        url: "https://tmsh.dev/og.jpg",
+        width: 486,
+        height: 136,
+        alt: "Tom Shaw",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
