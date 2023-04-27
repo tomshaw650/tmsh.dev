@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useQuery } from "@tanstack/react-query";
 
 import { SiSpotify } from "react-icons/si";
@@ -16,6 +15,8 @@ export default function DisplaySong() {
     queryKey: ["spotify"],
     queryFn: () => getSong(),
   });
+
+  console.log(data);
 
   if (isLoading) {
     return <div className="h-24">spotify loading...</div>;
@@ -38,7 +39,7 @@ export default function DisplaySong() {
     >
       <div className="w-16">
         {data.data.isPlaying ? (
-          <Image
+          <img
             className="w-16 shadow-sm"
             src={data.data.albumImageUrl}
             alt={data.data.album}
