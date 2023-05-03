@@ -3,6 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 import { SiSpotify } from "react-icons/si";
+import { Skeleton } from "@/components/skeleton";
 
 async function getSong() {
   const res = await fetch("/api/spotify");
@@ -11,15 +12,13 @@ async function getSong() {
 }
 
 export default function DisplaySong() {
-  const { data, isLoading, error } = useQuery({
+  const { data, isLoading, isFetching, error } = useQuery({
     queryKey: ["spotify"],
     queryFn: () => getSong(),
   });
 
-  console.log(data);
-
-  if (isLoading) {
-    return <div className="h-24">spotify loading...</div>;
+  if (!data || isFetching || isLoading) {
+    return <Skeleton className="h-24 w-80" />;
   }
 
   if (error) {
@@ -35,7 +34,7 @@ export default function DisplaySong() {
           ? data.data.songUrl
           : "https://open.spotify.com/user/tomwar99"
       }
-      className="relative flex w-72 items-center space-x-4 rounded-md border p-5 transition-shadow hover:shadow-md"
+      className="relative flex w-80 items-center space-x-4 rounded-md border p-5 transition-shadow hover:shadow-md"
     >
       <div className="w-16">
         {data.data.isPlaying ? (
@@ -61,7 +60,11 @@ export default function DisplaySong() {
         </p>
       </div>
       <div className="absolute bottom-1.5 right-1.5">
-        <SiSpotify size={20} color={"#FDD641"} />
+        {data.data.isPlaying ? (
+          <SiSpotify size={20} color={"#FDD641"} className="animate-spin" />
+        ) : (
+          <SiSpotify size={20} color={"#FDD641"} />
+        )}
       </div>
     </a>
   );

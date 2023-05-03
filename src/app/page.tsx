@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import getQueryClient from "@/utils/getQueryClient";
 import Hydrate from "@/utils/hydrate.client";
 import { dehydrate } from "@tanstack/query-core";
+import { Skeleton } from "@/components/skeleton";
 
 const DisplaySong = dynamic(() => import("./now-playing"), {
   ssr: false,
@@ -42,7 +43,7 @@ export default async function Home() {
           Within this portfolio, you can read more about me, look at some of my
           projects, and find some links to get in contact.
         </p>
-        <p className="text-[#FDD641]">have fun!</p>
+        <p className="text-[#FDD641]">enjoy your stay!</p>
       </div>
       <Footer />
     </>

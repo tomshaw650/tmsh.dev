@@ -9,11 +9,21 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+    },
     extend: {
       backgroundImage: {
         hero: "url(/bg.webp)",
       },
+      colors: {
+        muted: {
+          DEFAULT: "hsla(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
