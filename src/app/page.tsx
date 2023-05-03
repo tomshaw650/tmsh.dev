@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import getQueryClient from "@/utils/getQueryClient";
 import Hydrate from "@/utils/hydrate.client";
 import { dehydrate } from "@tanstack/query-core";
-import { Skeleton } from "@/components/skeleton";
 
 const DisplaySong = dynamic(() => import("./now-playing"), {
   ssr: false,
