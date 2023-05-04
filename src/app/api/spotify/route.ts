@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     response.status > 400 ||
     response.data.currently_playing_type !== "track"
   ) {
-    return NextResponse.json({ isPlaying: false });
+    return NextResponse.json({ data: { isPlaying: false } });
   }
 
   const data = {
