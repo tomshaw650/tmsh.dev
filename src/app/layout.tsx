@@ -17,8 +17,8 @@ export const metadata = {
     images: [
       {
         url: "https://tmsh.dev/og.jpg",
-        width: 486,
-        height: 136,
+        width: 1300,
+        height: 630,
         alt: "Tom Shaw",
       },
     ],
