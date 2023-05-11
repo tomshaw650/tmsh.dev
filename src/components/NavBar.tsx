@@ -48,7 +48,7 @@ export const NavBar = () => {
             contact
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="bg-black w-[350px] p-5 flex flex-col gap-y-3">
+            <ul className="bg-black w-[300px] sm:w-[350px] p-5 flex flex-col gap-y-3">
               <a
                 href="mailto:tomshaw650@gmail.com"
                 className="hover:bg-slate-300 hover:bg-opacity-40 p-1 flex justify-between items-center active:bg-slate-500"
