@@ -45,7 +45,7 @@ export const NavBar = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="hover:text-[#FDD641] text-xl">
-            reach out
+            contact
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="bg-black w-[350px] p-5 flex flex-col gap-y-3">
