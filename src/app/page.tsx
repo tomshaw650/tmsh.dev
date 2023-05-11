@@ -34,9 +34,9 @@ export default async function Home() {
       </div>
       <div className="max-w-md gap-y-5 flex flex-col text-xl">
         <p>
-          I&apos;m a 23 y/o programmer from North East UK. Currently studying
-          Computer Science BSc at Northumbria University, I plan to graduate
-          soon and continue working as a software developer.
+          I&apos;m a 23 y/o programmer from North East England. Currently
+          studying Computer Science BSc at Northumbria University, I plan to
+          graduate soon and continue working as a software developer.
         </p>
         <p>
           Within this portfolio, you can read more about me, look at some of my

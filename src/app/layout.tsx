@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import { NavBar } from "@/components/NavBar";
 import Providers from "@/utils/provider";
 import { League_Spartan } from "next/font/google";
 
@@ -33,20 +35,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={ls.className}>
       <body className="max-w-2xl h-full mx-auto px-6 my-8 bg-hero text-white">
-        <nav className="mb-5 gap-x-5 flex">
-          <a className="hover:text-[#FDD641] text-xl" href="/">
-            home
-          </a>
-          <a className="hover:text-[#FDD641] text-xl" href="/about">
-            about
-          </a>
-          <a className="hover:text-[#FDD641] text-xl" href="/projects">
-            projects
-          </a>
-          <a className="hover:text-[#FDD641] text-xl" href="/contact">
-            email
-          </a>
-        </nav>
+        <Toaster position="bottom-center" reverseOrder={false} />
+        <NavBar />
         <Providers>
           <main className="flex flex-col h-full">{children}</main>
         </Providers>
