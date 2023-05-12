@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={ls.className}>
-      <body className="max-w-2xl h-full mx-auto px-6 my-8 bg-hero text-white">
+      <body className="max-w-2xl h-full mx-auto px-6 my-8 bg-hero bg-black text-white">
         <Toaster position="bottom-center" reverseOrder={false} />
         <NavBar />
         <Providers>
