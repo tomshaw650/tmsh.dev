@@ -50,7 +50,7 @@ export default function Projects() {
               ))}
             </div>
             {project.url && (
-              <div className="flex gap-x-5 mt-2">
+              <div className="flex gap-x-5 gap-y-2 mt-2">
                 <a href="https://github.com/tomshaw650/lumbr">
                   <Github />
                 </a>
