@@ -1,4 +1,5 @@
 import { Badge } from "@/components/badge";
+import { Footer } from "@/components/footer";
 import { Github, ExternalLink } from "lucide-react";
 
 interface urls {
@@ -43,7 +44,7 @@ export default function Projects() {
           >
             <span className="text-3xl font-bold">{project.title}</span>
             <span className="text-lg">{project.description}</span>
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-3 flex-wrap">
               {project.tags.map((tag) => (
                 <Badge key={tag}>{tag}</Badge>
               ))}
@@ -61,6 +62,7 @@ export default function Projects() {
           </li>
         ))}
       </ul>
+      <Footer />
     </>
   );
 }
