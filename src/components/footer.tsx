@@ -2,7 +2,7 @@ import { SiLinkedin, SiGithub, SiTwitter, SiDiscord } from "react-icons/si";
 
 export const Footer = () => {
   return (
-    <footer className="mt-16">
+    <footer className="mt-12">
       <ul className="flex gap-x-5 bottom-0">
         <li>
           <a href="https://www.linkedin.com/in/tom-shaw99/">

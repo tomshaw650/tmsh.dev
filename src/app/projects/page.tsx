@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <>
       <h1 className="text-6xl font-bold">projects</h1>
-      <h2 className="text-lg">
+      <h2 className="text-lg mt-2 opacity-60">
         A list of projects I&apos;ve worked on, both in and out of University
       </h2>
       <ul className="flex flex-col gap-y-3">
