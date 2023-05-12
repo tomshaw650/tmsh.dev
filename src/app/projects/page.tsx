@@ -44,13 +44,13 @@ export default function Projects() {
           >
             <span className="text-3xl font-bold">{project.title}</span>
             <span className="text-lg">{project.description}</span>
-            <div className="flex gap-x-3 flex-wrap">
+            <div className="flex gap-x-3 gap-y-3 flex-wrap">
               {project.tags.map((tag) => (
                 <Badge key={tag}>{tag}</Badge>
               ))}
             </div>
             {project.url && (
-              <div className="flex gap-x-5 gap-y-2 mt-2">
+              <div className="flex gap-x-5 mt-2">
                 <a href="https://github.com/tomshaw650/lumbr">
                   <Github />
                 </a>
