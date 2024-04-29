@@ -7,10 +7,10 @@ export default function About() {
       <h1 className="text-6xl font-bold">about me</h1>
       <div className="flex">
         <p className="text-xl mt-8 max-w-xs">
-          I&apos;m a 23 year old from Durham, UK, massively into software
+          I&apos;m a 24 year old from Durham, UK, massively into software
           development. Right now, I&apos;m a big fan of web technologies. At
-          work, I am on the Digital Engagement team, building webchats for
-          various HMRC services.
+          work, I am on the Plan your Retirement team, building and maintaining
+          7 services for both the public and internal agents.
         </p>
         <Image
           width={200}

@@ -23,6 +23,15 @@ const projectList: {
     description: "A social web app for discussing software development.",
   },
   {
+    title: "Blog",
+    url: {
+      live: "https://blog.tmsh.dev",
+      github: "https://github.com/tomshaw650/blog",
+    },
+    tags: ["NextJS", "TypeScript", "TailwindCSS"],
+    description: "A blog for random thoughts about the web.",
+  },
+  {
     title: "Blue Avocado Dashboard",
     tags: ["React", "Spring Boot", "D3", "MySQL", "Docker"],
     description: "A private dashboard for Blue Avocado, a nutrition company.",
