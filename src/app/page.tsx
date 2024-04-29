@@ -35,7 +35,7 @@ export default async function Home() {
         <p>
           I&apos;m a 24 y/o programmer from North East England. I graduated with
           a First Class Honours in Computer Science from Northumbria University.
-          I'm a Front End Developer at DWP.
+          I&apos;m a Front End Developer at DWP.
         </p>
         <p>
           Within this portfolio, you can read more about me, look at some of my
