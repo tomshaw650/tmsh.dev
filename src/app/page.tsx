@@ -24,7 +24,7 @@ export default async function Home() {
     <>
       <h1 className="text-6xl font-bold">hi👋, i&apos;m tom!</h1>
       <h2 className="opacity-80 mb-5 text-lg">
-        front end developer @<span className="text-[#008670]"> DWP</span>
+        senior front end developer @<span className="text-[#008670]"> DWP</span>
       </h2>
       <div className="mb-7">
         <Hydrate state={dehydratedState}>
@@ -35,7 +35,7 @@ export default async function Home() {
         <p>
           I&apos;m a 24 y/o programmer from North East England. I graduated with
           a First Class Honours in Computer Science from Northumbria University.
-          I&apos;m a Front End Developer at DWP.
+          I&apos;m a Senior Front End Developer at DWP.
         </p>
         <p>
           Within this portfolio, you can read more about me, look at some of my
